@@ -1,2 +1,2 @@
-# Figma File Extracor
+# Figma Extractor
 extracts data from a figma file
