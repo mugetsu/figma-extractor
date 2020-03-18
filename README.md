@@ -1,2 +1,2 @@
-# figma-plugin
-just trying out Figma API
+# Figma File Extracor
+extracts data from a figma file

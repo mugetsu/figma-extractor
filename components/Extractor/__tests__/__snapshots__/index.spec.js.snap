@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Extractor renders properly 1`] = `
+<div class="extractor">
+  Extract Figma data?
+</div>
+`;
