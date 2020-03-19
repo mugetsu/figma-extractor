@@ -1,7 +1,7 @@
 <template>
   <div class="wrap-footer">
     <footer>
-      <p>© 2020 Randell Quitain</p>
+      <p>© 2020 GoBear / Design</p>
     </footer>
   </div>
 </template>
@@ -17,6 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .wrap-footer {
+  padding: 24px;
   font-size: 1rem;
   text-align: center;
   text-transform: uppercase;

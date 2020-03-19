@@ -1,9 +1,10 @@
 export default {
-  async getFigmaData({ state, commit }, payload) {
+  async getFigmaData({ commit }, figmaId) {
+    console.log(`${process.env.apiUrl}/${figmaId}`)
     await this.$axios
-      .get("https://api.figma.com/v1/files/" + figmaId, {
+      .get(`${process.env.apiUrl}/${figmaId}`, {
         headers: {
-          'X-Figma-Token': process.env.FIGMA_KEY
+          'X-Figma-Token': process.env.figmaKey
         }
       })
       .then(res => {

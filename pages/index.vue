@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="extract-wrapper">
     <Extractor />
   </div>
 </template>
@@ -24,4 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.extract-wrapper {
+  margin: 0 auto;
+}
 </style>

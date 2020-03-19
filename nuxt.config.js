@@ -9,7 +9,8 @@ module.exports = {
   ** Environment variables
   */
   env: {
-    figmaKey: process.env.FIGMA_KEY
+    figmaKey: process.env.FIGMA_KEY,
+    apiUrl: process.env.API_URL
   },
 
   /*
@@ -27,7 +28,7 @@ module.exports = {
       { hid: 'og:url', property: 'og:url', content: '' }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fredoka+One&display=swap' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
