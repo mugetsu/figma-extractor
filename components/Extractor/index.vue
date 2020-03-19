@@ -50,11 +50,17 @@ export default {
           .then(_ => {
             this.isSubmit = false
             this.isDone = true
-            const { document, name, lastModified } = this.data
+            const { document, name, components, lastModified } = this.data
             const { children } = document
-            const components = children.map(o => {
+            const docChild = children.map(o => {
               return {
                 name: o.name
+              }
+            })
+            const docComponent = Object.entries(components).map(o => {
+              return {
+                name: o[1].name,
+                description: o[1].description
               }
             })
             const formatDate = date => {
@@ -65,7 +71,8 @@ export default {
             }
             const fileData = {
               name: name,
-              components: components,
+              children: docChild,
+              components: docComponent,
               lastModified: formatDate(lastModified)
             }
             this.downloadReady = this.download(JSON.stringify(fileData, null, 4), `components-${this.figmaId}.json`, 'application/json')
