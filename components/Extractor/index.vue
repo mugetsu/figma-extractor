@@ -69,6 +69,11 @@ export default {
               lastModified: formatDate(lastModified)
             }
             this.downloadReady = this.download(JSON.stringify(fileData, null, 4), `components-${this.figmaId}.json`, 'application/json')
+            this.$gtag('event', 'click', {
+              event_category: 'extract',
+              event_label: 'extract click',
+              value: `components-${this.figmaId}.json`
+            })
           })
       } else {
         this.isSubmit = false
