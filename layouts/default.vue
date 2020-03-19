@@ -17,15 +17,6 @@ export default {
   components: {
     Header,
     Footer
-  },
-  head () {
-    return {
-      title: 'COVID-19 Tracker',
-      meta: [
-        { hid: 'og:description', name: 'og:description', content: 'tracks COVID-19 around the world.' },
-        { hid: 'description', name: 'description', content: 'tracks COVID-19 around the world.' }
-      ]
-    }
   }
 }
 </script>
