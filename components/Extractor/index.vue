@@ -53,8 +53,14 @@ export default {
             const { document, name, components, lastModified } = this.data
             const { children } = document
             const docChild = children.map(o => {
+              const childChildren = o.children.map(x => {
+                if (x.type === 'COMPONENT') {
+                  return x.name
+                }
+              })
               return {
-                name: o.name
+                name: o.name,
+                children: childChildren.filter(y => y != null)
               }
             })
             const docComponent = Object.entries(components).map(o => {
